@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Newsarticles::Admin::NewsarticlesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.newsarticles_admin_newsarticles_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_newsarticles_admin_newsarticle_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Newsarticles::Admin::NewsarticlesController.sortable? && ::Refinery::Newsarticles::Newsarticle.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Newsarticles"),
+                 refinery.newsarticles_admin_newsarticles_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Newsarticles"),
+                 refinery.newsarticles_admin_newsarticles_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

@@ -1,0 +1,14 @@
+<% content_for :body do %>
+<div>
+<h2>Wallpaper overzicht </h2>
+
+</div>
+  <div id="wallpapers">
+    <% i=0 %>
+    <% @wallpapers.each do |wallpaper| %>
+      <%= link_to (image_fu wallpaper.photo, '200x200'), refinery.wallpapers_wallpaper_path(wallpaper) %>
+    <% end %>
+  </div>
+<% end %>
+
+<%= render '/refinery/content_page' %>

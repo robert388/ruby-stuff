@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      wallpapers:
+        title: Wallpapers
+    wallpapers:
+      admin:
+        wallpapers:
+          actions:
+            create_new: Maak een nieuwe Wallpaper
+            reorder: Wijzig de volgorde van de Wallpapers
+            reorder_done: Klaar met het wijzingen van de volgorde van de Wallpapers
+          records:
+            title: Wallpapers
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Wallpapers. Druk op 'Maak een nieuwe Wallpaper' om de eerste aan te maken.
+          wallpaper:
+            view_live_html: Bekijk deze wallpaper op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze wallpaper
+            delete: Verwijder deze wallpaper voor eeuwig
+      wallpapers:
+        show:
+          other: Andere Wallpapers
+  activerecord:
+    attributes:
+      'refinery/wallpapers/wallpaper':
+        title: Title
+        description: Description
+        photo: Photo

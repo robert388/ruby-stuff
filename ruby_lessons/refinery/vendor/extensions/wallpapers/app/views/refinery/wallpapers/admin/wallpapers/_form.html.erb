@@ -1,0 +1,33 @@
+<%= form_for [refinery, :wallpapers_admin, @wallpaper] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @wallpaper,
+              :include_object_name => true %>
+
+  
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest'  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :description -%>
+    <%= f.text_field :description  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_id,
+               :image => @wallpaper.photo,
+               :toggle_image_display => false %>
+
+  </div>
+  
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.wallpapers.admin.wallpapers.wallpaper'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @wallpaper.title) %>
+<% end -%>

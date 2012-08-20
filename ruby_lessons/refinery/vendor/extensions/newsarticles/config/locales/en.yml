@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      newsarticles:
+        title: Newsarticles
+    newsarticles:
+      admin:
+        newsarticles:
+          actions:
+            create_new: Add New Newsarticle
+            reorder: Reorder Newsarticles
+            reorder_done: Done Reordering Newsarticles
+          records:
+            title: Newsarticles
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Newsarticles yet. Click "Add New Newsarticle" to add your first newsarticle.
+          newsarticle:
+            view_live_html: View this newsarticle live <br/><em>(opens in a new window)</em>
+            edit: Edit this newsarticle
+            delete: Remove this newsarticle forever
+      newsarticles:
+        show:
+          other: Other Newsarticles
+  activerecord:
+    attributes:
+      'refinery/newsarticles/newsarticle':
+        title: Title
+        description: Description
+        photo: Photo

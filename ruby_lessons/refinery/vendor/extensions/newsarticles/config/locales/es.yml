@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      newsarticles:
+        title: Newsarticles
+#        article: masculino/femenino
+    newsarticles:
+      admin:
+        newsarticles:
+          actions:
+            create_new: Crear nuevo newsarticle
+            reorder: Reordenar newsarticles
+            reorder_done: Reordenación de newsarticles completada
+          records:
+            title: Newsarticles
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay newsarticles todavía. Pulsa en "Crear nuevo Newsarticle" para crear tu primer newsarticle.
+          newsarticle:
+            view_live_html: Ver este newsarticle como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este newsarticle
+            delete: Borrar este newsarticle para siempre
+      newsarticles:
+        show:
+          other: Otros newsarticles
+  activerecord:
+    attributes:
+      'refinery/newsarticles/newsarticle':
+        title: Title
+        description: Description
+        photo: Photo

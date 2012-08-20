@@ -1,0 +1,33 @@
+<%= form_for [refinery, :newsarticles_admin, @newsarticle] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @newsarticle,
+              :include_object_name => true %>
+
+  
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest'  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :description -%>
+    <%= f.text_field :description  -%>
+
+  </div>
+  
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_id,
+               :image => @newsarticle.photo,
+               :toggle_image_display => false %>
+
+  </div>
+  
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.newsarticles.admin.newsarticles.newsarticle'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @newsarticle.title) %>
+<% end -%>

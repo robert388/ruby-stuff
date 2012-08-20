@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      newsarticles:
+        title: Newsarticles
+    newsarticles:
+      admin:
+        newsarticles:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Newsarticle
+            reorder: Réordonner les Newsarticles
+            reorder_done: Fin de réordonnancement des Newsarticles
+          records:
+            title: Newsarticles
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Newsarticle. Cliquer sur "Créer un(e) nouve(au/l/lle) Newsarticle" pour créer votre premi(er/ère) newsarticle.'
+          newsarticle:
+            view_live_html: Voir ce(t/tte) newsarticle <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) newsarticle
+            delete: Supprimer définitivement ce(t/tte) newsarticle
+      newsarticles:
+        show:
+          other: Autres Newsarticles
+  activerecord:
+    attributes:
+      'refinery/newsarticles/newsarticle':
+        title: Title
+        description: Description
+        photo: Photo

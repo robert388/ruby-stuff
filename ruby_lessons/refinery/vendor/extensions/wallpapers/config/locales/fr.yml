@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      wallpapers:
+        title: Wallpapers
+    wallpapers:
+      admin:
+        wallpapers:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Wallpaper
+            reorder: Réordonner les Wallpapers
+            reorder_done: Fin de réordonnancement des Wallpapers
+          records:
+            title: Wallpapers
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Wallpaper. Cliquer sur "Créer un(e) nouve(au/l/lle) Wallpaper" pour créer votre premi(er/ère) wallpaper.'
+          wallpaper:
+            view_live_html: Voir ce(t/tte) wallpaper <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) wallpaper
+            delete: Supprimer définitivement ce(t/tte) wallpaper
+      wallpapers:
+        show:
+          other: Autres Wallpapers
+  activerecord:
+    attributes:
+      'refinery/wallpapers/wallpaper':
+        title: Title
+        description: Description
+        photo: Photo

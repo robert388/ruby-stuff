@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      wallpapers:
+        title: Wallpapers
+    wallpapers:
+      admin:
+        wallpapers:
+          actions:
+            create_new: Lag en ny Wallpaper
+            reorder: Endre rekkefølgen på Wallpapers
+            reorder_done: Ferdig å endre rekkefølgen Wallpapers
+          records:
+            title: Wallpapers
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Wallpapers enda. Klikk på "Lag en ny Wallpaper" for å legge til din første wallpaper.
+          wallpaper:
+            view_live_html: Vis hvordan denne wallpaper ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne wallpaper
+            delete: Fjern denne wallpaper permanent
+      wallpapers:
+        show:
+          other: Andre Wallpapers
+  activerecord:
+    attributes:
+      'refinery/wallpapers/wallpaper':
+        title: Title
+        description: Description
+        photo: Photo

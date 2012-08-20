@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      wallpapers:
+        title: Wallpapers
+#        article: masculino/femenino
+    wallpapers:
+      admin:
+        wallpapers:
+          actions:
+            create_new: Crear nuevo wallpaper
+            reorder: Reordenar wallpapers
+            reorder_done: Reordenación de wallpapers completada
+          records:
+            title: Wallpapers
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay wallpapers todavía. Pulsa en "Crear nuevo Wallpaper" para crear tu primer wallpaper.
+          wallpaper:
+            view_live_html: Ver este wallpaper como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este wallpaper
+            delete: Borrar este wallpaper para siempre
+      wallpapers:
+        show:
+          other: Otros wallpapers
+  activerecord:
+    attributes:
+      'refinery/wallpapers/wallpaper':
+        title: Title
+        description: Description
+        photo: Photo

@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Wallpapers::Admin::WallpapersController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.wallpapers_admin_wallpapers_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_wallpapers_admin_wallpaper_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Wallpapers::Admin::WallpapersController.sortable? && ::Refinery::Wallpapers::Wallpaper.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Wallpapers"),
+                 refinery.wallpapers_admin_wallpapers_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Wallpapers"),
+                 refinery.wallpapers_admin_wallpapers_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

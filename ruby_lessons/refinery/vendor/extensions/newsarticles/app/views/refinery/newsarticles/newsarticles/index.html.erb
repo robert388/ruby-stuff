@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="newsarticles">
+    <% @newsarticles.each do |newsarticle| %>
+      <li>
+        <%= link_to newsarticle.title, refinery.newsarticles_newsarticle_path(newsarticle) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      wallpapers:
+        title: Wallpapers
+    wallpapers:
+      admin:
+        wallpapers:
+          actions:
+            create_new: Add New Wallpaper
+            reorder: Reorder Wallpapers
+            reorder_done: Done Reordering Wallpapers
+          records:
+            title: Wallpapers
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Wallpapers yet. Click "Add New Wallpaper" to add your first wallpaper.
+          wallpaper:
+            view_live_html: View this wallpaper live <br/><em>(opens in a new window)</em>
+            edit: Edit this wallpaper
+            delete: Remove this wallpaper forever
+      wallpapers:
+        show:
+          other: Other Wallpapers
+  activerecord:
+    attributes:
+      'refinery/wallpapers/wallpaper':
+        title: Title
+        description: Description
+        photo: Photo
